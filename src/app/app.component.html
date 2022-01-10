@@ -1,0 +1,17 @@
+<h4>Flopbox</h4>
+
+<b>Actors</b>
+<div *ngFor="let actor of actors"
+  class="p-2 text-light bg-dark rounded mb-2"
+>
+  {{actor.name}}
+</div>
+
+<b>Movies to Rent</b>
+<div class="movie-panels" style="flex-wrap:wrap">
+  
+  <my-movie-tile *ngFor="let flop of flops" class="mb-2" [movie]="flop"></my-movie-tile>
+  
+
+</div>
+
